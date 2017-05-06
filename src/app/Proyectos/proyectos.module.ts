@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { ProyectosRoutingModule } from './proyectos-routing.module';
 import { ProyectosComponent } from './proyectos.component';
+import { ProyectoService }         from './proyecto.service';
 
 @NgModule({
   imports: [
@@ -10,6 +11,7 @@ import { ProyectosComponent } from './proyectos.component';
     ProyectosRoutingModule,
     HttpModule
   ],
-  declarations: [ProyectosComponent]
+  declarations: [ProyectosComponent],
+  providers: [ProyectoService]
 })
 export class ProyectosModule { }
