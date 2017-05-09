@@ -9,7 +9,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class ProyectoService {
-    private proyectosUrl = 'localhost:8080/proyecto';
+    private proyectosUrl = 'http://localhost:8080/proyecto';
 
     constructor(private http : Http){
     }

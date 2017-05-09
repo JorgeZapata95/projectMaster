@@ -18,7 +18,7 @@ export class ProyectosComponent implements OnInit {
   constructor(private proyectoService: ProyectoService, private router: Router) { }
 
     getProyectos() {
-       this.proyectoService.getProyectos2().then(proyectos => this.proyectos = proyectos,
+       this.proyectoService.getProyectos().then(proyectos => this.proyectos = proyectos,
        error => this.mensajeError = <any>error);
     }
 
